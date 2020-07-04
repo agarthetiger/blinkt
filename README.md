@@ -8,7 +8,7 @@ This role does not depend on anything.
 
 ## Role Variables
 
-This role has no configuration variables.
+`python3_blinkt_version` - Version of the Debian package to install. Default version is "0.1.2".
 
 ## Dependencies
 
