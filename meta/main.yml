@@ -1,0 +1,22 @@
+galaxy_info:
+  author: Andrew Garner
+  description: Install packages and example code for the Pimoroni Blinkt LED array
+  license: MIT
+  min_ansible_version: 2.9
+  platforms:
+  - name: Raspbian
+    versions:
+    - 10
+    - Buster
+  - name: Debian
+    versions:
+    - 10
+    - Buster
+  galaxy_tags:
+    - raspberry
+    - raspbian
+    - raspberrypi
+    - pi
+    - pimoroni
+    - blinkt
+dependencies: []

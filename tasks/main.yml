@@ -1,0 +1,19 @@
+---
+- name: Ensure the python3 Blinkt package is present
+  apt:
+    name: python3-blinkt
+    state: latest
+  become: yes
+
+- name: Ensure examples folder exists
+  file:
+    name: ~pi/code/blinkt/examples/
+    state: directory
+    
+- name: Ensure example files are present
+  copy:
+    src: "{{ item }}"
+    dest: ~pi/code/blinkt/examples/{{ item.split('/')[-1] }}
+    mode: 0750
+  with_fileglob: 
+    - "examples/*"
